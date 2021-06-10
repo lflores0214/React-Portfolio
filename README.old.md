@@ -1,2 +1,2 @@
 # React-Portfolio
-My professional protfolio built with React
+My professional portfolio built with React
