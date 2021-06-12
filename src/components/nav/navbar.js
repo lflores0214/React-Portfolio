@@ -1,15 +1,22 @@
 import React from "react";
 import { NavbarWrapper } from "./navbar.styled";
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <NavbarWrapper>
-      <a href="#" className="active">
+      <NavLink exact to="/" activeClassName="active">
         Home
-      </a>
-      <a href="#">about</a>
-      <a href="#">projects</a>
-      <a href="#">contacts</a>
+      </NavLink>
+      <NavLink to="/about" activeClassName="active">
+        About
+      </NavLink>
+      <NavLink to="/projects" activeClassName="active">
+        Projects
+      </NavLink>
+      <NavLink to="contact" activeClassName="active">
+        Contact
+      </NavLink>
     </NavbarWrapper>
   );
 };
