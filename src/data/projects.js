@@ -1,19 +1,25 @@
-export const projects = {
-  commerce: {
-    imgSrc: "../assets/ECSS.png",
-    title: "E-Commerce",
+import ec from "../assets/ECSS.png";
+import pp from "../assets/PPSS.png"
+import wlj from "../assets/WLJSS.png"
+import vm from "../assets/VMSS.png"
+
+export const projects = [
+  {
+    imgSrc: ec,
+    title: "lf-Commerce",
     stack:
       "React.js, Redux, Redux-Saga, React-Router, Firebase, Stripe, Reselect",
     description:
       "A clothing e-commerce site where users can register, sign in, add items to their cart and checkout using Stripe's checkout component",
     bullets: [],
+    tags: ['fullstack','all'],
     links: {
       app: "https://lf-commerce.herokuapp.com/",
       code: "https://github.com/lflores0214/e-commerce",
     },
   },
-  wlj: {
-    imgSrc: "../assets/WLJSS.png",
+  {
+    imgSrc: wlj,
     title: "Weight Lifting Journal",
     stack:
       "Node.js, Express.js,Knex.js, SQLite3, JSON WebToken, Jest, Supertest ",
@@ -24,13 +30,14 @@ export const projects = {
       "Used JSON WebToken for authentication and security. Added restricted middleware to routes, to prevent unauthorized access to endpoints",
       "Built unit tests using Jest and Supertest",
     ],
+    tags: ['backend','all'],
     links: {
       app: "https://weight-journal.now.sh/",
       code: "https://github.com/Weight-Lifting-Journal-bw-7/back-end",
     },
   },
-  plantParenthood: {
-    imgSrc: "../assets/PPSS.png",
+  {
+    imgSrc: pp,
     title: "Plant Parenthood",
     stack: "React.js, Redux, Redux-Thunk, Styled-Components, React-Router-Dom ",
     description:
@@ -40,13 +47,14 @@ export const projects = {
       "Implemented Redux for state management",
       "Used AXIOS to allow user to perform full CRUD operations, utilizing a 3rd party API",
     ],
+    tags:['frontend','all'],
     links: {
       app: "https://front-end-two-hazel.now.sh/",
       code: "https://github.com/lflores0214/Front-end-1",
     },
   },
-  veganMeets: {
-    imgSrc: "../assets/VMSS.png",
+  {
+    imgSrc: vm,
     title: "VeganMeets",
     stack: "React.js, Redux, Redux-Thunk, Styled-Components, React-Router-Dom",
     description:
@@ -56,9 +64,10 @@ export const projects = {
       "Used AXIOS to allow user to perform full CRUD operations, utilizing a 3rd party API",
       "Implemented search functionality",
     ],
+    tags:['frontend','all'],
     links: {
       app: "https://sharp-babbage-30c7ac.netlify.app/",
       code: "https://github.com/lflores0214/FE",
     },
   },
-};
+];
